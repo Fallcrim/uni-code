@@ -1,0 +1,5 @@
+**/.git/
+.vscode/
+**/build/
+*.pdf
+group-96/
