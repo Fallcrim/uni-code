@@ -1,4 +1,4 @@
-#include "../include/meine_funktionen.hpp"
+#include <meine_funktionen.hpp>
 #include <iostream>
 #include <cmath>
 
