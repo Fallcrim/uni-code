@@ -31,7 +31,7 @@ double kosinus (double x) {
     return kosinus;
 }
 
-double sinus(double x, double toleranzwert) {
+double sinus(double x, double toleranzwert) { // Kopie von sinus(double x) mit manuell setzbarem Parameter toleranzwert
     double sinus = 0;
     double summand = x;
     double zaehler_helfer = 1;
@@ -44,7 +44,7 @@ double sinus(double x, double toleranzwert) {
     return sinus;
 }
 
-double kosinus (double x, double toleranzwert) {
+double kosinus (double x, double toleranzwert) { // Kopie von kosinus(double x) mit manuell setzbarem Parameter toleranzwert
     double kosinus = 0;
     double summand = 1;
     double zaehler_helfer = 0;
@@ -75,7 +75,7 @@ double kotangens(double x) {
     return kosinus(x) / sin;
 }
 
-double tangens(double x, double toleranzwert) {
+double tangens(double x, double toleranzwert) { // Kopie von tangens(double x) mit manuell setzbarem Parameter toleranzwert
     double cos = kosinus(x, toleranzwert);
     if (cos == 0) { // Verhindert Division durch 0
         std::cout << "FEHLER: Tangens nicht definiert für " + std::to_string(x) << std::endl;
@@ -84,7 +84,7 @@ double tangens(double x, double toleranzwert) {
     return sinus(x) / cos;
 }
 
-double kotangens(double x, double toleranzwert) {
+double kotangens(double x, double toleranzwert) { // Kopie von kotangens(double x) mit manuell setzbarem Parameter toleranzwert
     double sin = sinus(x, toleranzwert);
     if (sin == 0) { // Verhindert Division durch 0
         std::cout << "FEHLER: Kotangens nicht definiert für " + std::to_string(x) << std::endl;
