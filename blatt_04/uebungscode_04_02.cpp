@@ -4,15 +4,15 @@
 #include <vector>
 
 int lies_ganzzahl() {
-  std::string wort;
-  std::cin >> wort;
-  int ganzzahl = 0;
-  try {
+    std::string wort;
+    std::cin >> wort;
+    int ganzzahl = 0;
+    try {
     ganzzahl = std::stoi(wort);
-  } catch (const std::invalid_argument& e) {
+    } catch (const std::invalid_argument& e) {
     ganzzahl = -1000;
-  }
-  return ganzzahl;
+    }
+    return ganzzahl;
 }
 
 void print_array(const std::vector<int>& arr) { // konstante Referenz zum Vector, da dieser nur ausgelesen und nicht verändert wird
