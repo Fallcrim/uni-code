@@ -18,7 +18,7 @@ int lies_ganzzahl() {
 void print_array(const std::vector<int>& arr) { // konstante Referenz zum Vector, da dieser nur ausgelesen und nicht verändert wird
     std::cout << '{' << ' ';
     bool first = true;
-    for (const int& element : arr) { // konstante konstante Element-Referenz, da auch die Elemente nur ausgelesen werden
+    for (const int& element : arr) { // konstante Element-Referenz, da auch die Elemente nur ausgelesen werden
         if (!first) std::cout << ", "; // stellt sicher, dass vor dem ersten Element kein Komma gedruckt wird
         std::cout << std::to_string(element);
         first = false;
